@@ -1,0 +1,1 @@
+-> This game is created using HTML,CSS and basic DOM manipulation using Javascript.
