@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+body {
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-color: #252525; */
+}
+.container {
+  width: 90%;
+  margin: 20px auto 0;
+}
+#heading {
+  font-size: 5vw;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+p {
+  font-size: 1.8rem;
+  color: #252525;
+  text-align: center;
+  margin: 10px 0px 50px 0px;
+}
+.ipt {
+  width: 280px;
+  height: 80px;
+  font-size: 3rem;
+  text-align: center;
+  background-color: white;
+  color: rgb(23, 170, 224);
+  border: 5px dashed black;
+}
+hr {
+  width: 100vw;
+  height: 15px;
+  background-color: white;
+  border: 0px;
+  position: absolute;
+  bottom: 50px;
+  z-index: -1;
+}
+.display {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.number {
+  background-color: white;
+  padding: 20px 30px;
+  font-size: 4rem;
+}
+#play,
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#info {
+  align-items: flex-end;
+}
+.check,
+.again {
+  background-color: white;
+  font-size: 2.5rem;
+  border: 0px;
+  padding: 20px;
+  box-shadow: 5px 5px black;
+}
+.check:active,
+.again:active {
+  transform: scale(95%);
+}
+.main {
+  width: 70%;
+  margin: 50px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#info p {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+@media (max-width: 450px) {
+  p {
+    font-size: 0.7rem;
+    margin: 20px 0px 20px 0px;
+  }
+  .number {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  hr {
+    bottom: 30px;
+  }
+  .main {
+    width: 90%;
+    /* flex-direction: column; */
+  }
+  .ipt {
+    width: 100px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  .check,
+  .again {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0px;
+  }
+}
