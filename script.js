@@ -49,4 +49,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundImage = 'url("bg2.jpg")';
   document.querySelector('.score').textContent = score;
   document.querySelector('.ipt').value = ' ';
+  document.querySelector('.number').textContent = `?`;
 });
